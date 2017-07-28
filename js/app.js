@@ -56,15 +56,25 @@ $(document).ready(function() {
     }
   };
 var searchTitle= "Please Enter Title"
-$("#search").change(function(){
+var searchValue = $('#search').val();
+console.log(searchValue);
+console.log(searchValue.length);
 
-  if ($("#search").length ) {
-    alert("elementsFound")
-  }
-    else{
-      alert("nothing found")
-    }
-    }
-  )
+// $("#search").listen(function(){
+
+  // if (searchValue.length>0 ) {
+  //   event.preventDefault();
+  // //  $.get('http://www.ombdapi.com')
+  // console.log("hey")
+  // alert("something!")
+  // $('body').append()
+  // }
+  //   else{
+  //     event.preventDefault();
+  //     alert("nothing found")
+  //     console.log("nothing");
+  //   }
+  //   }
+//  )
 })
 //});
