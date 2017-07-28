@@ -56,12 +56,14 @@ $(document).ready(function() {
     }
   };
 var searchTitle= "Please Enter Title"
-var searchValue = $('#search').val();
+$("button").click(function(e) {
+  e.preventDefault();
+  var searchValue = $('input').val();
 console.log(searchValue);
-console.log(searchValue.length);
+$ get('http://www.omdbapi.com/?i=tt3896198&apikey=87c8c5a8' + input);
+.then
 
-// $("#search").listen(function(){
-
+})});
   // if (searchValue.length>0 ) {
   //   event.preventDefault();
   // //  $.get('http://www.ombdapi.com')
@@ -76,5 +78,4 @@ console.log(searchValue.length);
   //   }
   //   }
 //  )
-})
 //});
