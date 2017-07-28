@@ -1,4 +1,4 @@
-(function() {
+$(document).ready(function() {
   'use strict';
 
   const movies = [];
@@ -55,6 +55,16 @@
       $('.modal-trigger').leanModal();
     }
   };
+var searchTitle= "Please Enter Title"
+$("#search").change(function(){
 
-  // ADD YOUR CODE HERE
-})();
+  if ($("#search").length ) {
+    alert("elementsFound")
+  }
+    else{
+      alert("nothing found")
+    }
+    }
+  )
+})
+//});
